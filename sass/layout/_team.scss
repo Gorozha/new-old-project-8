@@ -1,0 +1,60 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: $secondary-body-color;
+
+  &-title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    color: $main-color;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.team-workers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  width: calc((100% - 3 * 30px) / 4);
+
+  margin-right: 30px;
+
+  background-color: var(--body-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px $CardBorderRadius $CardBorderRadius;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.team-item > img {
+  margin-bottom: 30px;
+}
+
+.team-header {
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  color: $main-color;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-rubric {
+  margin-bottom: 16px;
+
+  text-align: center;
+
+  color: $secondary-color;
+  font-size: 16px;
+  line-height: 1.18;
+}

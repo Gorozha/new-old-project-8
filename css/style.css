@@ -1,0 +1,1264 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* основной цвет шрифта #212121*/
+/* вторичный цвет шрифта #757575 */
+/* цвет шрифта на темном фоне  #FFFFFF */
+/* цвет шрифта на темном фоне с прозрачностью rgba(255, 255, 255, 0,6) */
+/* цвет шрифта при ховере #2196F3 */
+/* цвет затемнения футера #2F303A */
+/* цвет затемнения главной картинки и некоторых маленьких (#2F303A
+80 %) rgba(47, 48, 58, 0,8) */
+/* вторичный фон боди #F5F4FA */
+/* цвет задвигающегося окна (#2196F3
+90 %) rgba(33, 150, 243, 0,9) */
+
+/* ПЕРЕНЕСЕНО */
+/* :root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --link-color: #2196f3;
+  --body-color: #ffffff;
+  --secondary-body-color: #f5f4fa;
+  --blackout-color: #2f303a;
+  --color-icon: #afb1b8;
+} */
+/* ПЕРЕНЕСЕНО */
+
+/* ПЕРЕНЕСЕНО */
+/* Указываем box sizing */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: var(--body-color);
+} */
+/* ПЕРЕНЕСЕНО */
+
+/* page ===================== */
+/* ПЕРЕНЕСЕНО CONTAINER.SCSS */
+/* .page {
+  width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+/* ПЕРЕНЕСЕНО CONTAINER.SCSS */
+
+/* page-header============================= */
+/* ПЕРЕНЕСЕНО HEADER.SCSS */
+/* .page-header {
+  border-bottom: 1px solid #ececec;
+  
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+/* ПЕРЕНЕСЕНО HEADER.SCSS */
+
+/* logo=================================== */
+/* ПЕРЕНЕСЕНО В LOGO.SCSS */
+/* .logo-web {
+  color: var(--link-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-studio {
+  color: var(--main-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+} */
+/* ПЕРЕНЕСЕНО В LOGO.SCSS */
+
+/* site-nav a=============================*/
+/* ПЕРЕНЕСЕНО В SITE-NAV.SCSS */
+/* .site-nav a {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: inherit;
+} */
+
+/* .site-nav a:hover,
+.site-nav a:focus {
+  color: var(--link-color);
+} */
+
+/* .site-nav .current {
+  color: var(--link-color);
+} */
+
+/* декор подчерк. для активной ссылки */
+/* .site-nav li {
+  position: relative;
+} */
+
+/* .site-nav {
+  display: flex;
+  margin-left: 50px;
+  
+} */
+
+/* .site-nav :not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* .current::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--link-color);
+  bottom: -30px;
+  border-radius: 2px;
+} */
+/* ПЕРЕНЕСЕНО В SITE-NAV.SCSS */
+
+/* auth-nav ==========================*/
+/* ПЕРЕНЕСЕНО AUTH-NAV.SCSS */
+/* .auth-nav a {
+  color: var(--secondary-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+}
+svg.auth-icon {
+  vertical-align: middle;
+}
+
+svg.phone-icon {
+  vertical-align: middle;
+}
+.a-convert:hover .auth-icon,
+.a-convert:focus .auth-icon {
+  fill: var(--link-color);
+}
+
+.a-phone:hover .phone-icon,
+.a-phone:focus .phone-icon {
+  fill: var(--link-color);
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--link-color);
+}
+
+.auth-icon::before {
+  content: "";
+  display: inline-block;
+  height: 11px;
+  width: 16px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.auth-icon {
+  margin-right: 10px;
+}
+
+.auth-phone::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 10px;
+  margin-right: 10px;
+  background-image: url("../images/smartphone.svg");
+}
+
+.phone-icon {
+  margin-right: 10px;
+} */
+
+/* .auth-nav {
+  display: flex; */
+/* задаем флекс мейлу и телефону */
+/* margin-left: auto; */
+/* задаем автомат. левый маржин мейлу  */
+/* } */
+
+/* .auth-nav li + li {
+  margin-left: 50px; */
+/* даем маржин влево всем ЛИ кроме первого */
+/* } */
+
+/* .page-nav {
+  display: flex; */
+/* задаем флекс всему хедеру */
+/* align-items: center; */
+/* выравниваем все элем. по горизонтали */
+/* justify-content: space-between; */
+/* позиционирование по горизонтали */
+/* padding-top: 25px;
+  padding-bottom: 25px; */
+/* верхний и нижний отступы */
+/* } */
+/* ПЕРЕНЕСЕНО AUTH-NAV.SCSS */
+
+/* для дивов в секциях */
+/* ПЕРЕНЕСЕНО CONTAINER.SCSS */
+/* .container {
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+/* ПЕРЕНЕСЕНО CONTAINER.SCSS */
+
+/* hero =========================*/
+/* ПЕРЕНЕСЕНО HERO.SCSS */
+/* .hero {
+
+  padding-right: 15px;
+  padding-left: 15px; */
+
+/* text-align: center;
+} */
+/* .overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+/* .hero-title {
+  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  min-width: 696px;
+
+  color: var(--body-color);
+
+  font-size: 44px;
+  line-height: 1.36;
+} */
+/* ПЕРЕНЕСЕНО HERO.SCSS */
+
+/* ПЕРЕНЕСЕНО В _button.scss */
+/* .hero-button {
+  min-width: 200px;
+  
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  color: var(--body-color);
+  background-color: var(--link-color);
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.87;
+ 
+  letter-spacing: inherit;
+} */
+/* =========перспектива=========== */
+/* .scene {
+  perspective: 500px;
+}
+
+.scene:hover .hero-button {
+  transform: rotateY(360deg);
+  transition: transform 500ms linear;
+} */
+/* ПЕРЕНЕСЕНО В _button.scss */
+/* ==================================== */
+
+/* noname============================ */
+/* ПЕРЕНЕСЕНО В NONAME.SCSS */
+/* .noname {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+/* .noname-menu {
+  display: flex;
+  align-items: flex-end;
+} */
+
+/* .icon-antenna {
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-body-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+/* .icon-clock {
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-body-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .icon-diagram {
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-body-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut {
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-body-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .noname-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+.noname-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.noname-title {
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1.147;
+} */
+/* ПЕРЕНЕСЕНО В NONAME.SCSS */
+/* .noname-merit{} */
+
+/* works========================== */
+/* ПЕРЕНЕСЕНО В WORKS.SCSS */
+/* .works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.works-title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: inherit;
+} */
+/* .works-icons {
+  display: flex; */
+/* задали флекс */
+/* flex-wrap: wrap; */
+/* в случае добавления еще одной картинки
+  перейдут на новую строку */
+/* } */
+
+/* .works-item {
+  position: relative; */
+
+/* width: calc((100% - 60px) / 3); */
+/* для равномерного расположения картинок 
+  используем калькулятор */
+/* margin-right: 30px; */
+/* отступ справа 30 */
+/* } */
+
+/* .works-item:nth-child(3n) {
+  margin-right: 0; */
+/* кроме третего отступа */
+/* } */
+
+/* .works-item-img {
+  position: relative;
+} */
+/* .works-rubric {
+  font-size: 14px;
+  line-height: 1.142;
+  font-weight: bold;
+  text-align: center;
+
+  color: var(--body-color);
+
+  padding: 27px 90px;
+}
+
+.overlay-works {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  bottom: 7px;
+} */
+/* ПЕРЕНЕСЕНО В WORKS.SCSS */
+
+/* team ========================*/
+/* ПЕРЕНЕСЕНО В TEAM.SCSS */
+/* .team {
+  
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: var(--secondary-body-color);
+} */
+
+/* .team-title { */
+/* padding-top: 94px; */
+/* margin-bottom: 50px;
+
+  text-align: center;
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+} */
+
+/* .team-workers{} */
+/* .team-workers {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .team-item {
+  width: calc((100% - 3 * 30px) / 4);
+  
+  margin-right: 30px; */
+/* отступы с правой стороны всем 30 */
+/* background-color: var(--body-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
+/* добавляем тень и радиус карточкам */
+/* } */
+
+/* .team-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-item > img {
+  margin-bottom: 30px;
+} */
+/* .team-header {
+  margin-bottom: 10px; */
+/* отступ вниз */
+/* text-align: center; */
+/* выравниваем текст по центру */
+/* color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.18;
+} */
+
+/* .team-rubric {
+  margin-bottom: 16px; */
+/* отступ вниз */
+/* text-align: center; */
+/* выравниваем текст по центру */
+/* color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.18;
+} */
+/* ПЕРЕНЕСЕНО В TEAM.SCSS */
+
+/* ПЕРЕНЕСЕНО В SOCIAL.SCSS */
+/* .team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+} */
+
+/* .link-a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--body-color);
+  border-radius: 50%;
+} */
+
+/* .social-link:not(:last-child) {
+  margin-right: 10px; */
+/* маржин всем 10 кроме последнего */
+/* } */
+
+/* ======================================================= */
+/* раскраска соцсетей */
+/* .link-svg {
+  fill: var(--secondary-color);
+}
+.instagram:hover .link-svg,
+.instagram:focus .link-svg {
+  background-color: orangered;
+  fill: var(--body-color);
+}
+.instagram:hover,
+.instagram:focus {
+  background: #ce430c;
+  background: -moz-linear-gradient(left, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce430c 0%,
+    #e8eb3d 50%,
+    #c521ad 100%
+  );
+  background: linear-gradient(to right, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+}
+
+.twitter:hover .link-svg,
+.twitter:focus .link-svg {
+  fill: var(--body-color);
+}
+.twitter:hover,
+.twitter:focus {
+  background-color: var(--link-color);
+}
+
+.linkedin:hover .link-svg,
+.linkedin:focus .link-svg {
+  fill: var(--body-color);
+}
+.linkedin:hover,
+.linkedin:focus {
+  background-color: #0074b7;
+}
+
+.facebook:hover .link-svg,
+.facebook:focus .link-svg {
+  fill: var(--body-color);
+}
+.facebook:hover,
+.facebook:focus {
+  background-color: #145da0;
+} */
+/* ПЕРЕНЕСЕНО В SOCIAL.SCSS */
+
+/* clientage===================== */
+/* ПЕРЕНЕСЕНО В CLIENTAGE.SCSS */
+/* .clientage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.clientage-header {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 1.16;
+}
+.clientage-list > li {
+  display: flex; */
+/* задаем флекс для расположения в ряд */
+/* }
+
+.clientage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clientage-icon {
+  width: calc((100% - 5 * 30px) / 6);
+  margin-right: 30px; */
+/* маржин 30 для всех */
+/* } */
+/* .clientage-icon:nth-child(6n) {
+  margin-right: 0; */
+/* кроме каждого шестого */
+/* } */
+
+/*     */
+/* ширина кнопки */
+/* padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--body-color);
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* ховер на постоянных клиентов */
+/* .clientage-svg {
+  fill: var(--color-icon); */
+/* цвет заливки иконок СВГ */
+/* }
+
+.clientage-btn:hover .clientage-svg,
+.clientage-btn:focus .clientage-svg {
+  fill: var(--link-color);
+  stroke: 1px solid var(--link-color); */
+/* при ховере и фокусе цвет иконки СВГ */
+/* }
+
+.clientage-icon button:hover,
+.clientage-icon button:focus {
+  border: 1px solid var(--link-color); */
+/* при ховере и фокусе цвет бордера */
+/* } */
+/* ПЕРЕНЕСЕНО В CLIENTAGE.SCSS */
+/* footer===================== */
+/* ПЕРЕНЕСЕНО В FOOTER.SCSS */
+/* .footer {
+  background-color: var(--blackout-color);
+}
+
+.end {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-item .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.finish {
+  color: var(--body-color);
+}
+.footer-street a {
+  color: var(--body-color);
+}
+
+.footer-street {
+  margin-bottom: 9px;
+}
+
+.footer-mail a {
+  color: var(--body-color);
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+}
+
+.footer-tel a {
+  color: var(--body-color);
+} */
+
+/* .footer-item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: auto;
+  margin-right: 90px;
+} */
+/* ПЕРЕНЕСЕНО В FOOTER.SCSS */
+
+/* .footer-address{} */
+/* ПЕРЕНЕСЕНО В SOCIAL.SCSS */
+/* .footer-social {
+  padding-top: 72px;
+  margin-right: auto;
+
+  color: var(--body-color);
+}
+
+.footer-social > b {
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 1.142;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.catalog:not(:last-child) {
+  margin-right: 10px; */
+/* маржин всем 10 кроме последнего */
+/* } */
+/* ========================== */
+/* заливка соцсетей в футере */
+/* .footer-svg {
+  fill: var(--body-color);
+}
+
+.link-a.footer-a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #706d6dd6;
+  border-radius: 50%;
+}
+
+.instagram.footer-a:hover .footer-svg,
+.instagram.footer-a:focus .footer-svg {
+  background-color: orangered;
+  fill: var(--body-color);
+}
+.instagram.footer-a:hover,
+.instagram.footer-a:focus {
+  background: #ce430c;
+  background: -moz-linear-gradient(left, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce430c 0%,
+    #e8eb3d 50%,
+    #c521ad 100%
+  );
+  background: linear-gradient(to right, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+}
+
+.twitter.footer-a:hover .footer-svg,
+.twitter.footer-a:focus .footer-svg {
+  fill: var(--body-color);
+}
+.twitter.footer-a:hover,
+.twitter.footer-a:focus {
+  background-color: var(--link-color);
+}
+
+.linkedin.footer-a:hover .footer-svg,
+.linkedin.footer-a:focus .footer-svg {
+  fill: var(--body-color);
+}
+.linkedin.footer-a:hover,
+.linkedin.footer-a:focus {
+  background-color: #0074b7;
+}
+
+.facebook.footer-a:hover .footer-svg,
+.facebook.footer-a:focus .footer-svg {
+  fill: var(--body-color);
+}
+.facebook.footer-a:hover,
+.facebook.footer-a:focus {
+  background-color: #145da0;
+} */
+/* ПЕРЕНЕСЕНО В SOCIAL.SCSS */
+/* ============================== */
+
+/* button============================== */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .button {
+  display: inline-block;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  color: var(--body-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+  text-align: center;
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+
+/* footer */
+/* ПЕРЕНЕСЕНО В FORM.SCSS */
+/* .footer-subscribe > p {
+  padding-top: 72px;
+  padding-bottom: 164px;
+  margin-left: 0;
+  margin-right: 180px;
+  color: var(--body-color);
+
+  line-height: 1.142;
+  font-weight: bold;
+}
+
+.footer-subscribe {
+  display: flex;
+
+  position: relative;
+
+  align-items: flex-start;
+}
+
+.footer-subscribe input {
+  position: absolute;
+  top: 108px;
+  right: 220px;
+
+  min-width: 350px;
+
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+
+  background-color: var(--blackout-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-subscribe label {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+/* ПЕРЕНЕСЕНО В FORM.SCSS */
+/* .button-corection {
+  padding-top: 108px;
+} */
+
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .footer-button {
+  display: inline-flex;
+
+  min-width: 200px;
+  padding: 10px 42px 10px 23px;
+  margin-top: 108px;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--body-color);
+  background-color: var(--link-color);
+
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.87;
+} */
+
+/* .footer-button svg::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+} */
+
+/* .footer-button svg {
+  margin-left: 10px;
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+
+/* portfolio ==============================*/
+/* main */
+/* sentence */
+/* ПЕРЕНЕСЕНО В _PORTFOLIO.SCSS */
+/* .main {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+.main-sentence {
+  display: flex;
+  justify-content: center;
+}
+
+.main-sentence li {
+  margin-right: 8px;
+}
+
+.main-sentence li:last-child {
+  margin-right: 0;
+  
+} */
+/* ПЕРЕНЕСЕНО В _PORTFOLIO.SCSS */
+
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .main-sentence .button {
+  background-color: var(--secondary-body-color);
+  color: var(--main-color);
+
+  border: 1px solid transparent;
+  margin-bottom: 50px;
+
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  cursor: pointer;
+  text-align: center;
+} */
+/* .main-sentence .button:hover,
+.main-sentence .button:focus {
+  background-color: var(--link-color);
+  color: var(--secondary-body-color);
+  border: 1px solid transparent;
+
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+
+/* ПЕРЕНЕСЕНО В _PORTFOLIO.SCSS */
+/* .main-menu {
+  display: flex; */
+/* задаем флекс */
+/* flex-wrap: wrap; */
+/* каждый элем. занимает свободное место
+  в нашем случае три ряда по три элемента */
+/* } */
+
+/* .main-item {
+  width: calc((100% - 60px) / 3); */
+/* width: 370px */
+/* задаем ширину одного элем.ЛИ  */
+/* margin-right: 30px; */
+/* задаем отступ между элем.ЛИ */
+/* margin-bottom: 50px; */
+/* нижний маржин между элем. */
+/* border: 1px solid #eeeeee;
+} */
+/* .main-item:nth-child(n + 7) {
+  margin-bottom: 0; */
+/* выбираем элем. в седьмого или (все кроме первых шести) */
+/* .main-item:nth-last-child(-n + 3) {
+  margin-bottom: 0; 
+  выбираем последние три элем.
+} */
+/* } */
+
+/* .main-item:nth-child(3n) {
+  margin-right: 0; */
+/* в каждом третьем элем.ЛИ маржин 0 */
+/* /* применится ко всем кроме каждого третьего  */
+/* } */
+
+/* .box-1 {
+  width: 370px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .box-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--link-color);
+
+  font-size: 18px;
+  line-height: 1.555;
+
+  color: #ffffff;
+
+  transform: translateY(100%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+}
+
+.box-hover p {
+  padding: 63px 24px;
+} */
+
+/* .box-1:hover .box-hover,
+.box-1:focus .box-hover {
+  opacity: 0.8;
+
+  transform: translateY(0);
+}
+
+.main-item:hover,
+.main-item:focus {
+  box-shadow: -1px 7px 4px 2px #aaaaaa;
+
+  cursor: pointer;
+} */
+
+/* .main-div {
+  padding: 24px 20px;
+}
+
+.main-heading {
+  color: var(--main-color);
+
+  font-size: 18px;
+  line-height: 2;
+}
+
+.main-rubric {
+  color: var(--secondary-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+} */
+/* ПЕРЕНЕСЕНО В _PORTFOLIO.SCSS */
+
+/* ====backdrop=== */
+/* ПЕРЕНЕСЕНО В _BACKDROP.SCSS */
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+
+  opacity: 1;
+  transition: opacity 3500ms ease-out;
+} */
+
+/* .backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
+/* modal */
+/* .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 528px;
+
+  background-color: var(--body-color);
+
+  padding: 40px;
+} */
+
+/* .btn-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--body-color);
+
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  fill: var(--link-color);
+} */
+
+/* .btn-img {
+  position: absolute;
+
+  top: 0;
+  right: 5px;
+
+  width: 18px;
+  height: 18px;
+}
+
+.message {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 30px;
+} */
+
+/* .comment {
+  padding: 12px 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; */
+/* width: 448px; */
+/* }
+
+.form-field {
+  display: flex;
+  align-items: center; */
+/* display: flex;
+  flex-direction: column; */
+/* position: relative;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+
+  transition: transform 250ms linear;
+} */
+
+/* бордер без фокуса */
+/* .form-input {
+  margin: 0;
+  padding: 12px 10px;
+  padding-left: 42px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  width: 448px;
+} */
+/* цвет бордера при фокусе */
+/* .form-input:focus {
+  outline: none;
+  border-color: var(--link-color);
+} */
+/* подъем текста при фокусе и смена цвета */
+/* .form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--link-color);
+
+  transform: translateY(-200%);
+} */
+/* при правильном вводе инпут и бордер синий */
+/* .form-input:valid:required.form-input:not(:placeholder-shown) {
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+} */
+/* при неправильном вводе инпут серый бордер красный  */
+/* .form-input:invalid:required.form-input:not(:placeholder-shown) {
+  color: var(--secondary-color);
+  border: red solid 3px;
+} */
+
+/* позиционирование иконок свг */
+/* .input-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.form-input:focus .changing-color {
+  outline: none;
+  fill: var(--link-color);
+} */
+
+/* блок комментариев */
+/* .form-field textarea {
+  width: 448px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--link-color);
+} */
+/* прячем старый чек */
+/* .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.span-icon {
+  display: inline-block; */
+
+/* создаем квадрат для чекбокса */
+/* border: 2px solid var(--main-color);
+  border-radius: 4px; */
+
+/* размеры квадрата */
+/* width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+} */
+/* заменяем на скачаный синий чек */
+/* .checkbox:checked + .span-icon {
+  border-color: var(--link-color);
+
+  background-color: var(--link-color);
+  background-image: url("../images/iconcheck.svg");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+
+.span-icon + a {
+  margin-left: 5px;
+
+  color: var(--link-color);
+
+  border-bottom: 1px solid var(--link-color);
+} */
+
+/* .btn-backdrop {
+  max-width: 200px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 56px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  align-items: center;
+  text-decoration: none;
+  color: var(--body-color);
+  background-color: var(--link-color);
+
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.87;
+} */
+
+/* .btn-backdrop:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-backdrop:disabled,
+.btn-backdrop:disabled:hover {
+  background-color: #757575;
+  border-color: #afb1b8;
+} */
+/* ПЕРЕНЕСЕНО В _BACKDROP.SCSS */

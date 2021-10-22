@@ -1,0 +1,159 @@
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.link-a {
+  @extend .team-social;
+  // display: inline-flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 44px;
+  height: 44px;
+  background: $body-color;
+  border-radius: 50%;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* раскраска соцсетей */
+.link-svg {
+  fill: $secondary-color;
+}
+
+.instagram:hover,
+.instagram:focus {
+  background: #ce430c;
+  background: -moz-linear-gradient(left, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce430c 0%,
+    #e8eb3d 50%,
+    #c521ad 100%
+  );
+  background: linear-gradient(to right, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+
+  & .link-svg,
+  & .link-svg {
+    background-color: orangered;
+    fill: $body-color;
+  }
+}
+
+.twitter:hover,
+.twitter:focus {
+  background-color: $link-color;
+
+  & .link-svg,
+  & .link-svg {
+    fill: $body-color;
+  }
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  background-color: #0074b7;
+
+  & .link-svg,
+  & .link-svg {
+    fill: $body-color;
+  }
+}
+
+.facebook:hover,
+.facebook:focus {
+  background-color: #145da0;
+
+  & .link-svg,
+  & .link-svg {
+    fill: $body-color;
+  }
+}
+
+// footer
+.footer-social {
+  padding-top: 72px;
+  margin-right: auto;
+  color: $body-color;
+
+  & > b {
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 1.142;
+  }
+}
+
+.footer-link {
+  display: flex;
+}
+
+.catalog:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-svg {
+  fill: $body-color;
+}
+
+.link-a.footer-a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #706d6dd6;
+  border-radius: 50%;
+}
+
+.instagram.footer-a:hover,
+.instagram.footer-a:focus {
+  background: #ce430c;
+  background: -moz-linear-gradient(left, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce430c 0%,
+    #e8eb3d 50%,
+    #c521ad 100%
+  );
+  background: linear-gradient(to right, #ce430c 0%, #e8eb3d 50%, #c521ad 100%);
+
+  & .footer-svg,
+  & .footer-svg {
+    background-color: orangered;
+    fill: $body-color;
+  }
+}
+
+.twitter.footer-a:hover,
+.twitter.footer-a:focus {
+  background-color: $link-color;
+
+  & .footer-svg,
+  & .footer-svg {
+    fill: $body-color;
+  }
+}
+
+.linkedin.footer-a:hover,
+.linkedin.footer-a:focus {
+  background-color: #0074b7;
+
+  & .footer-svg,
+  & .footer-svg {
+    fill: $body-color;
+  }
+}
+
+.facebook.footer-a:hover,
+.facebook.footer-a:focus {
+  background-color: #145da0;
+
+  & .footer-svg,
+  & .footer-svg {
+    fill: $body-color;
+  }
+}

@@ -1,0 +1,61 @@
+.clientage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &-header {
+    margin-bottom: 50px;
+    text-align: center;
+    color: $main-color;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.clientage-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > li {
+    display: flex;
+  }
+}
+
+.clientage-icon {
+  width: calc((100% - 5 * 30px) / 6);
+  margin-right: 30px;
+
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+//=====
+
+.clientage-svg {
+  fill: $color-icon;
+}
+
+.clientage-btn:hover .clientage-svg,
+.clientage-btn:focus .clientage-svg {
+  fill: $link-color;
+  stroke: 1px solid $link-color;
+}
+
+.clientage-icon button {
+  width: 170px;
+  height: 90px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $body-color;
+  border: 1px solid $color-icon;
+  border-radius: $CardBorderRadius;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $link-color;
+  }
+}

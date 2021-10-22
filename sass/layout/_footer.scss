@@ -1,0 +1,44 @@
+.footer {
+  background-color: $blackout-color;
+}
+
+.end {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: auto;
+  margin-right: 90px;
+
+  & .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.finish {
+  color: $body-color;
+}
+
+.footer-street {
+  margin-bottom: 9px;
+
+  & a {
+    color: $body-color;
+  }
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+
+  & a {
+    color: $body-color;
+  }
+}
+
+.footer-tel a {
+  color: $body-color;
+}

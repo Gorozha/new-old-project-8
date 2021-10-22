@@ -1,0 +1,45 @@
+// footer form
+.footer-subscribe > p {
+  padding-top: 72px;
+  padding-bottom: 164px;
+  margin-left: 0;
+  margin-right: 180px;
+  color: $body-color;
+
+  line-height: 1.142;
+  font-weight: bold;
+
+  & label {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.footer-subscribe {
+  display: flex;
+
+  position: relative;
+
+  align-items: flex-start;
+
+  & input {
+    position: absolute;
+    top: 108px;
+    right: 220px;
+
+    min-width: 350px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+    background-color: $blackout-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: $CardBorderRadius;
+  }
+}
+
+// backdrop

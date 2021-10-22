@@ -1,0 +1,76 @@
+svg.auth-icon {
+  vertical-align: middle;
+
+  &.phone-icon {
+    vertical-align: middle;
+  }
+}
+
+.a-convert:hover .auth-icon,
+.a-convert:focus .auth-icon {
+  fill: $link-color;
+}
+
+.a-phone:hover .phone-icon,
+.a-phone:focus .phone-icon {
+  fill: $link-color;
+}
+
+.auth-nav a {
+  color: $secondary-color;
+
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: $link-color;
+}
+
+.auth-icon {
+  margin-right: 10px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 11px;
+    width: 16px;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+
+.auth-phone::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 10px;
+  margin-right: 10px;
+  background-image: url("../images/smartphone.svg");
+}
+
+.phone-icon {
+  margin-right: 10px;
+}
+
+.auth-nav {
+  display: flex;
+
+  margin-left: auto;
+
+  & li + li {
+    margin-left: 50px;
+  }
+}
+
+.page-nav {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

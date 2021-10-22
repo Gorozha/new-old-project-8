@@ -1,0 +1,223 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+
+  opacity: 1;
+  transition: opacity 3500ms ease-out;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 528px;
+
+  background-color: $body-color;
+
+  padding: 40px;
+}
+
+.btn-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $body-color;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: $link-color;
+  }
+}
+
+.btn-img {
+  position: absolute;
+
+  top: 0;
+  right: 5px;
+
+  width: 18px;
+  height: 18px;
+}
+
+.message {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $main-color;
+  margin-bottom: 30px;
+}
+
+.comment {
+  padding: 12px 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-field {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    margin-bottom: 28px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  margin: 0;
+  padding: 12px 10px;
+  padding-left: 42px;
+  border: 1px solid $secondary-color;
+  border-radius: $FormBorderRadius;
+  width: 448px;
+
+  &:focus {
+    outline: none;
+    border-color: $link-color;
+  }
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: $link-color;
+
+  transform: translateY(-200%);
+}
+
+.form-input:valid:required.form-input:not(:placeholder-shown) {
+  color: $link-color;
+  border: 1px solid $link-color;
+}
+
+.form-input:invalid:required.form-input:not(:placeholder-shown) {
+  color: $secondary-color;
+  border: red solid 3px;
+}
+
+.input-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.form-input:focus .changing-color {
+  outline: none;
+  fill: $link-color;
+}
+
+.form-field textarea {
+  width: 448px;
+  border: 1px solid $secondary-color;
+  border-radius: $FormBorderRadius;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: $link-color;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.span-icon {
+  display: inline-block;
+
+  border: 2px solid $main-color;
+  border-radius: $CardBorderRadius;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+}
+
+.checkbox:checked + .span-icon {
+  border-color: $link-color;
+
+  background-color: $link-color;
+  background-image: url("../images/iconcheck.svg");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+
+.span-icon + a {
+  margin-left: 5px;
+
+  color: $link-color;
+
+  border-bottom: 1px solid $link-color;
+}
+
+.btn-backdrop {
+  max-width: 200px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 56px;
+
+  border-radius: $CardBorderRadius;
+  border-color: transparent;
+  align-items: center;
+  text-decoration: none;
+  color: $body-color;
+  background-color: $link-color;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.87;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn-backdrop:disabled,
+.btn-backdrop:disabled:hover {
+  background-color: #757575;
+  border-color: #afb1b8;
+}
