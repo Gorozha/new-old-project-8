@@ -1,10 +1,18 @@
 .clientage {
+  @media screen and(max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 
   &-header {
+    @media screen and(max-width: 480px) {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
     margin-bottom: 50px;
     text-align: center;
     color: $main-color;
@@ -14,15 +22,21 @@
 }
 
 .clientage-list {
+  @media screen and(max-width: 480px) {
+    // margin: -15px;
+    width: 100%;
+    max-width: 100%;
+  }
   display: flex;
   flex-wrap: wrap;
-
-  & > li {
-    display: flex;
-  }
 }
 
 .clientage-icon {
+  @media screen and(max-width: 480px) {
+    width: calc((100% - 60px) / 2);
+    max-width: 100%;
+    margin: 15px;
+  }
   width: calc((100% - 5 * 30px) / 6);
   margin-right: 30px;
 
@@ -35,6 +49,7 @@
 
 .clientage-svg {
   fill: $color-icon;
+  text-align: center;
 }
 
 .clientage-btn:hover .clientage-svg,
@@ -44,6 +59,11 @@
 }
 
 .clientage-icon button {
+  @media screen and(max-width: 480px) {
+    // width: 210px;
+    width: 100%;
+    max-width: 100%;
+  }
   width: 170px;
   height: 90px;
 

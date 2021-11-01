@@ -1,15 +1,33 @@
 %logo-style {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: bold;
 }
+// .logo {
+//   @extend %logo-style;
+//   @media screen and (max-width: 480px) {
+//     font-size: 24px;
+//   }
+// }
+
 .logo-web {
+  // @extend %logo-style;
+  // @media screen and(min-width:480px) {
+  //   font-size: 24px;
+
+  // }
   color: $link-color;
   @extend %logo-style;
 }
+
 .logo-studio {
   color: $main-color;
   @extend %logo-style;
+
+  // @media screen and(min-width:480px) {
+  //   font-size: 24px;
+
+  // }
 }

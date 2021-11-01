@@ -3,19 +3,34 @@
 }
 
 .end {
+  @media screen and(max-width: 480px) {
+    display: block;
+  }
   display: flex;
   align-items: baseline;
 }
 
 .footer-item {
+  @media screen and(max-width: 480px) {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+    text-align: center;
+  }
   padding-top: 60px;
   padding-bottom: 60px;
   width: auto;
   margin-right: 90px;
 
   & .logo {
-    display: block;
-    margin-bottom: 20px;
+    @media screen and(max-width: 480px) {
+      display: block;
+      // padding-top: 60px;
+      margin-bottom: 20px;
+    }
   }
 }
 

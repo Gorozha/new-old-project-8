@@ -1,5 +1,7 @@
 // дополнительные сбросы стилей
-
+* {
+  outline: 1px solid red;
+}
 *,
 *::before,
 *::after {
@@ -40,6 +42,10 @@ body {
   color: $secondary-color;
   background-color: $body-color;
 }
+// img {
+//   width: 100%;
+//   max-width: 100%;
+// }
 
 // ------------
 /* raleway-700 - cyrillic */

@@ -41,6 +41,10 @@
 
 // ----------
 .footer-button {
+  @media screen and(max-width: 480px) {
+    margin-top: 74px;
+    margin-bottom: 60px;
+  }
   display: inline-flex;
 
   min-width: 200px;
@@ -78,6 +82,11 @@
 
 // ---------portfolio
 .main-sentence .button {
+  @media screen and (max-width: 480px) {
+    // padding-left: 15px;
+    // padding-right: 15px;
+    margin-bottom: 15px;
+  }
   background-color: $secondary-body-color;
   color: $main-color;
 
