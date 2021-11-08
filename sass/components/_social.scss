@@ -1,4 +1,7 @@
 .team-social {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +9,7 @@
 }
 
 .link-a {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     position: relative;
     top: 12px;
   }
@@ -80,15 +83,21 @@
 
 // footer
 .footer-social {
-  @media screen and(max-width: 480px) {
+  @media screen and(min-width: 480px) and (max-width: 767px) {
     padding-top: 0;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    left: 180px;
   }
   padding-top: 72px;
   margin-right: auto;
   color: $body-color;
 
   & > b {
-    @media screen and(max-width: 480px) {
+    @media screen and(min-width: 480px) and (max-width: 767px) {
       justify-content: center;
     }
     display: flex;
@@ -98,7 +107,7 @@
 }
 
 .footer-link {
-  @media screen and(max-width: 480px) {
+  @media screen and(min-width: 480px) and (max-width: 767px) {
     justify-content: center;
 
     margin-bottom: 60px;

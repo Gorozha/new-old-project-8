@@ -28,6 +28,33 @@
           <li><a href="#">Контакты</a></li>
         </ul>
 
+        <button
+          type="button"
+          class="menu-burger is-open"
+          aria-expanded="true"
+          aria-controls="menu-container"
+          data-menu-burger
+        >
+          <svg
+            width="30"
+            height="30"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-burger"
+              href="./images/Menu_icon.svg#Layer_1"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/InlineSprite.svg#src-7"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          контентное меню
+        </div>
+
         <ul class="auth-nav">
           <li class="auth-letter">
             <a class="a-convert" href="info@devstudio.com">

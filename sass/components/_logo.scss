@@ -5,19 +5,8 @@
   letter-spacing: 0.03em;
   font-weight: bold;
 }
-// .logo {
-//   @extend %logo-style;
-//   @media screen and (max-width: 480px) {
-//     font-size: 24px;
-//   }
-// }
 
 .logo-web {
-  // @extend %logo-style;
-  // @media screen and(min-width:480px) {
-  //   font-size: 24px;
-
-  // }
   color: $link-color;
   @extend %logo-style;
 }
@@ -25,9 +14,11 @@
 .logo-studio {
   color: $main-color;
   @extend %logo-style;
+}
 
-  // @media screen and(min-width:480px) {
-  //   font-size: 24px;
-
-  // }
+.logo {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    white-space: nowrap;
+  }
 }
