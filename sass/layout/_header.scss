@@ -20,10 +20,12 @@
       display: none;
     }
   }
-  border-bottom: 1px solid $secondary-body-color;
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    border-bottom: 1px solid $secondary-body-color;
+  }
 
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
 }
 
 .page-nav {
@@ -35,12 +37,13 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 100%;
-    max-width: 100%;
+    max-width: 768px;
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  min-width: 1200px;
+  width: 1600px;
+  width: 100%;
   display: flex;
 
   align-items: center;
