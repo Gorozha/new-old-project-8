@@ -20,11 +20,21 @@ svg.auth-icon {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
   }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    // margin-bottom: 16px;
+  }
 
   color: $secondary-color;
 
   font-size: 14px;
   line-height: 1.14;
+}
+
+.auth-letter {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
 }
 
 .auth-nav a:hover,
@@ -46,6 +56,9 @@ svg.auth-icon {
 }
 
 .auth-phone::before {
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0;
     display: block;
@@ -63,8 +76,8 @@ svg.auth-icon {
 }
 
 .auth-nav {
-  @media screen and(min-width: 480px) and (max-width: 767px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
   }
   @media screen and(min-width: 768px) and (max-width: 1199px) {
     display: block;
@@ -74,6 +87,10 @@ svg.auth-icon {
   margin-left: auto;
 
   & li + li {
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-bottom: 60px;
+    }
     margin-left: 50px;
 
     @media screen and(min-width: 768px) and (max-width: 1199px) {

@@ -66,9 +66,9 @@
     max-height: 400px;
     margin-bottom: 60px;
   }
-  // @media screen and(min-width: 1200px) and (max-width: 1600px) {
-  //   min-width: 1200px;
-  // }
+  @media screen and(min-width: 1200px) {
+    max-width: 1600px;
+  }
   width: 1600px;
 
   width: 100%;

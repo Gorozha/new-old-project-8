@@ -1,4 +1,7 @@
 .site-nav a {
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
   color: $main-color;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -13,14 +16,26 @@
 }
 
 .site-nav li {
-  @media screen and(min-width:480px) and (max-width: 767px) {
-    display: none;
-  }
-
   position: relative;
 }
 
+// .site-nav ~ li {
+//   @media screen and (max-width: 767px) {
+//     // margin-right: auto;
+//     // margin-left: auto;
+//     margin: 0;
+//   }
+// }
+
 .site-nav {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+
+    padding-top: 60px;
+  }
   @media screen and(min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +45,11 @@
 
   & :not(:last-child) {
     margin-right: 50px;
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      // margin-top: 60px;
+      margin-bottom: 52px;
+    }
   }
 }
 // ==========
@@ -37,6 +57,12 @@
   color: $link-color;
 
   &::before {
+    @media screen and (max-width: 767px) {
+      // content: "";
+      bottom: -6px;
+      width: 100%;
+      // position: absolute;
+    }
     content: "";
     display: block;
     position: absolute;

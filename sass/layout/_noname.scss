@@ -10,15 +10,15 @@
     margin-right: auto;
     margin-left: auto;
   }
-  @media screen and(min-width: 1200px) and (max-width: 1600px) {
+  @media screen and(min-width: 1200px) {
     min-width: 1200px;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  padding-left: 15px;
-  padding-right: 15px;
-
   &-menu {
     @media screen and(min-width: 480px) and (max-width: 767px) {
       display: block;

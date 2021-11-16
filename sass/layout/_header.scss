@@ -12,20 +12,15 @@
     padding-right: 0;
     padding-left: 0;
 
-    max-width: 768px;
+    max-width: 767px;
     margin-right: auto;
     margin-left: auto;
-    .menu-burger,
-    .menu-container {
-      display: none;
-    }
+    // .menu-burger,
+    // .menu-container {
+    //   display: none;
+    // }
   }
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    border-bottom: 1px solid $secondary-body-color;
-  }
-
-  // padding-left: 15px;
-  // padding-right: 15px;
+  border-bottom: 1px solid $secondary-body-color;
 }
 
 .page-nav {
