@@ -16,10 +16,10 @@
     margin-right: auto;
     margin-left: auto;
   }
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     min-width: 1200px;
     padding-top: 93px;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
   }
   &-sentence {
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -48,7 +48,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
 
     flex-wrap: wrap;
@@ -74,7 +74,7 @@
       margin-bottom: 60px;
     }
   }
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
 
     margin-right: 30px;
@@ -88,7 +88,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-item:nth-child(3n) {
     margin-right: 0;
   }
@@ -97,13 +97,23 @@
 .img-box {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     & img {
+      display: block;
       width: 100%;
-      max-width: 100%;
+      height: auto;
+      // max-width: 100%;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     & img {
+      display: block;
       max-width: 354px;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & img {
+      display: block;
+      height: auto;
     }
   }
   position: relative;
