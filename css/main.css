@@ -768,11 +768,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  height: 44px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-social, .link-a {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-social, .link-a {
+    margin-bottom: 6px;
   }
 }
 
@@ -1104,37 +1110,58 @@ body {
 }
 
 .overlay {
-  width: 1600px;
-  width: 100%;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .overlay {
-    max-width: 480px;
-    width: 100%;
+    width: 480px;
     height: 400px;
     margin-bottom: 60px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header480.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header480.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header480@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    max-width: 768px;
-    width: 100%;
-    max-height: 400px;
+    width: 768px;
+    height: 400px;
     margin-bottom: 60px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header768.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header768.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    max-width: 1600px;
     width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header1600.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header1600.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header1600@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header1600@2x.jpg);
   }
 }
 
@@ -1417,9 +1444,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #f5f4fa;
+  background: #f5f4fa;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .team {
@@ -1427,7 +1452,9 @@ body {
     padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 450px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1483,6 +1510,12 @@ body {
   }
 }
 
+.team-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .team-item {
     display: block;
@@ -1511,10 +1544,6 @@ body {
   .team-item {
     width: calc((100% - 3 * 30px) / 4);
     margin-right: 30px;
-    background-color: var(--body-color);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
 }
 .team-item:nth-child(4n) {
@@ -1562,7 +1591,7 @@ body {
 
 .works {
   padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1616,7 +1645,7 @@ body {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 7px;
+  bottom: 0px;
 }
 
 .footer {
@@ -2696,11 +2725,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  height: 44px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-social, .link-a {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-social, .link-a {
+    margin-bottom: 6px;
   }
 }
 
@@ -3032,37 +3067,58 @@ body {
 }
 
 .overlay {
-  width: 1600px;
-  width: 100%;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .overlay {
-    max-width: 480px;
-    width: 100%;
+    width: 480px;
     height: 400px;
     margin-bottom: 60px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header480.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header480.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header480@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    max-width: 768px;
-    width: 100%;
-    max-height: 400px;
+    width: 768px;
+    height: 400px;
     margin-bottom: 60px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header768.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header768.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    max-width: 1600px;
     width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header1600.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header1600.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 68, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/header1600@2x.jpg);
+    background-image: linear-gradient(to right, rgba(25, 28, 68, 0.5), rgba(47, 48, 58, 0.5)), url(../images/header1600@2x.jpg);
   }
 }
 
@@ -3345,9 +3401,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #f5f4fa;
+  background: #f5f4fa;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .team {
@@ -3355,7 +3409,9 @@ body {
     padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 450px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -3411,6 +3467,12 @@ body {
   }
 }
 
+.team-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .team-item {
     display: block;
@@ -3439,10 +3501,6 @@ body {
   .team-item {
     width: calc((100% - 3 * 30px) / 4);
     margin-right: 30px;
-    background-color: var(--body-color);
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
 }
 .team-item:nth-child(4n) {
@@ -3490,7 +3548,7 @@ body {
 
 .works {
   padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -3544,7 +3602,7 @@ body {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 7px;
+  bottom: 0px;
 }
 
 .footer {
